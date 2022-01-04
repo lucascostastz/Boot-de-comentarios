@@ -40,7 +40,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>ilustracao-dos-desenhos-animados-de-mao-acenando-robo-bonito_138676-2744.jpg</normaloff>ilustracao-dos-desenhos-animados-de-mao-acenando-robo-bonito_138676-2744.jpg</iconset>
+    <normaloff>icone.jpg</normaloff>icone.jpg</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(64, 123, 136);</string>
@@ -81,10 +81,10 @@ border-color: black;}</string>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>60</y>
+      <x>50</x>
+      <y>50</y>
       <width>201</width>
-      <height>21</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -120,10 +120,10 @@ border-width: 1px;</string>
    <widget class="QLineEdit" name="lineEdit_3">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>100</y>
+      <x>50</x>
+      <y>90</y>
       <width>201</width>
-      <height>21</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -187,8 +187,8 @@ border-width: 1px;</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>90</y>
+      <x>20</x>
+      <y>80</y>
       <width>31</width>
       <height>41</height>
      </rect>
@@ -357,9 +357,9 @@ border-color: black;}</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>120</x>
       <y>220</y>
-      <width>131</width>
+      <width>171</width>
       <height>21</height>
      </rect>
     </property>
