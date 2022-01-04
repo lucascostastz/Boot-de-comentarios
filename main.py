@@ -74,7 +74,7 @@ def comecar():
     def tempo():
 # Tempo Selecionado
         tempo = primeira_tela.comboBox.currentText()
-        time.sleep(int(tempo))
+        time.sleep(int(tempo)*(60))
         
         # Comentar
         comentario = primeira_tela.lineEdit_5.text()
