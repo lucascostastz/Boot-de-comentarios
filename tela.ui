@@ -6,26 +6,26 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>300</width>
-    <height>350</height>
+    <width>500</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
   <property name="minimumSize">
    <size>
-    <width>300</width>
-    <height>350</height>
+    <width>500</width>
+    <height>500</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>300</width>
-    <height>350</height>
+    <width>500</width>
+    <height>500</height>
    </size>
   </property>
   <property name="font">
@@ -43,16 +43,28 @@
     <normaloff>icone.jpg</normaloff>icone.jpg</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(64, 123, 136);</string>
+   <string notr="true">background-color: rgb(0, 170, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>500</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>500</height>
+    </size>
+   </property>
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>260</y>
-      <width>51</width>
-      <height>21</height>
+      <x>90</x>
+      <y>400</y>
+      <width>81</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -61,29 +73,26 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton{background-color: rgb(255, 255, 255);
-border-style: outset;
-border-width: 2px;
-border-radius: 15px;
-border-color: black;
-}
-
-QPushButton:pressed{background-color: rgb(255, 255, 255);
-border-style: outset;
-border-width: 1px;
-border-radius: 14px;
-border-color: black;}</string>
+     <string notr="true">QPushButton {
+background-color: rgb(255, 255, 255);
+	color: rgb(16, 16, 16);
+border-radius:5px;
+ }
+QPushButton:hover{
+background: #CFCFCF;
+border-radius:5px;
+}</string>
     </property>
     <property name="text">
-     <string>Iniciar</string>
+     <string>INICIAR</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>50</y>
-      <width>201</width>
+      <x>30</x>
+      <y>80</y>
+      <width>301</width>
       <height>31</height>
      </rect>
     </property>
@@ -95,17 +104,24 @@ border-color: black;}</string>
     </property>
     <property name="font">
      <font>
-      <family>MS Shell Dlg 2</family>
-      <pointsize>15</pointsize>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
       <weight>50</weight>
+      <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 15px;
-border-style: outset;
-border-width: 1px;</string>
+     <string notr="true">QLineEdit{
+background: #CFCFCF;
+border-radius: 2px;
+color: #000;
+font: 13px &quot;Arial&quot; ;
+
+}
+QLineEdit:Focus {
+border: 1px solid red;
+}</string>
     </property>
     <property name="readOnly">
      <bool>false</bool>
@@ -120,9 +136,9 @@ border-width: 1px;</string>
    <widget class="QLineEdit" name="lineEdit_3">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>90</y>
-      <width>201</width>
+      <x>30</x>
+      <y>140</y>
+      <width>301</width>
       <height>31</height>
      </rect>
     </property>
@@ -134,17 +150,24 @@ border-width: 1px;</string>
     </property>
     <property name="font">
      <font>
-      <family>MS Shell Dlg 2</family>
-      <pointsize>15</pointsize>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
       <weight>50</weight>
+      <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 15px;
-border-style: outset;
-border-width: 1px;</string>
+     <string notr="true">QLineEdit{
+background: #CFCFCF;
+border-radius: 2px;
+color: #000;
+font: 13px &quot;Arial&quot; ;
+
+}
+QLineEdit:Focus {
+border: 1px solid red;
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -162,73 +185,13 @@ border-width: 1px;</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>40</y>
-      <width>31</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Cadastro de Produtos/usuario.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>80</y>
-      <width>31</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../Cadastro de Produtos/cadeado.png</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLineEdit" name="Inserir_Link">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>290</y>
-      <width>271</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Sistema em desenvolvimento por: Lucas Costa</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_4">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
       <y>20</y>
-      <width>281</width>
-      <height>21</height>
+      <width>441</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -239,23 +202,30 @@ border-width: 1px;</string>
     </property>
     <property name="font">
      <font>
-      <family>MS Shell Dlg 2</family>
-      <pointsize>8</pointsize>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
       <weight>50</weight>
+      <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 15px;
-border-style: outset;
-border-width: 1px;</string>
+     <string notr="true">QLineEdit{
+background: #CFCFCF;
+border-radius: 2px;
+color: #000;
+font: 13px &quot;Arial&quot; ;
+
+}
+QLineEdit:Focus {
+border: 1px solid red;
+}</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
     <property name="readOnly">
      <bool>false</bool>
@@ -270,10 +240,10 @@ border-width: 1px;</string>
    <widget class="QLineEdit" name="lineEdit_5">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>130</y>
-      <width>261</width>
-      <height>71</height>
+      <x>30</x>
+      <y>250</y>
+      <width>441</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -284,17 +254,24 @@ border-width: 1px;</string>
     </property>
     <property name="font">
      <font>
-      <family>MS Shell Dlg 2</family>
-      <pointsize>15</pointsize>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
       <weight>50</weight>
+      <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);
-border-radius: 15px;
-border-style: outset;
-border-width: 1px;</string>
+     <string notr="true">QLineEdit{
+background: #CFCFCF;
+border-radius: 2px;
+color: #000;
+font: 13px &quot;Arial&quot; ;
+
+}
+QLineEdit:Focus {
+border: 1px solid red;
+}</string>
     </property>
     <property name="text">
      <string/>
@@ -309,49 +286,17 @@ border-width: 1px;</string>
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>260</y>
-      <width>61</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{background-color: rgb(255, 255, 255);
-border-style: outset;
-border-width: 2px;
-border-radius: 15px;
-border-color: black;
-}
-
-QPushButton:pressed{background-color: rgb(255, 255, 255);
-border-style: outset;
-border-width: 1px;
-border-radius: 14px;
-border-color: black;}</string>
-    </property>
-    <property name="text">
-     <string>Sair</string>
-    </property>
-   </widget>
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>220</y>
-      <width>69</width>
-      <height>22</height>
+      <x>370</x>
+      <y>140</y>
+      <width>101</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 255, 255);</string>
+     <string notr="true">background: #CFCFCF;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -367,8 +312,104 @@ border-color: black;}</string>
      <string/>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>460</y>
+      <width>501</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>12</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(255, 255, 255);
+color: rgb(16, 16, 16);
+border:none;
+	font: 75 12pt &quot;MS Serif&quot;;
+ }
+QPushButton:hover{
+color: rgb(0, 85, 255);
+	font: 75 13pt &quot;MS Serif&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Desenvolvido por: Lucas Costa</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>80</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Serif</family>
+      <pointsize>8</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(64, 123, 136);
+color: rgb(255, 255, 255);
+border:none;
+	font: 75 8pt &quot;MS Serif&quot;;
+ }
+QPushButton:hover{
+color: rgb(16, 16, 16);
+	font: 75 10pt &quot;MS Serif&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Intervalo de comentários</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>400</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(255, 255, 255);
+	color: rgb(16, 16, 16);
+border-radius: 5px;
+ }
+QPushButton:hover{
+background: #CFCFCF;
+border-radius:5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>SAIR</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
